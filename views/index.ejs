@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>範例1-6</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src="common.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="Page0.html"<%if(page.indexOf("/Page0.html") > -1){%> class="selected"<%}%>>首頁</a>
+        <a href="Page1.html"<%if(page.indexOf("/Page1.html") > -1){%> class="selected"<%}%>>開課時間</a>
+        <a href="Page2.html"<%if(page.indexOf("/Page2.html") > -1){%> class="selected"<%}%>>教學分享</a>
+        <a href="Page3.html"<%if(page.indexOf("/Page3.html") > -1){%> class="selected"<%}%>>交流討論</a>
+        <a href="Page4.html"<%if(page.indexOf("/Page4.html") > -1){%> class="selected"<%}%>>課程詢問</a>
+        <a href="Page5.html"<%if(page.indexOf("/Page5.html") > -1){%> class="selected"<%}%>>聯絡我們</a>
+    </div>
+    <div class="content">
+        <%-content%>
+    </div>
+</body>
+
+</html>
